@@ -1,4 +1,4 @@
-package ru.stc15.config;
+package BikeSharing.Erd.config;
 
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
