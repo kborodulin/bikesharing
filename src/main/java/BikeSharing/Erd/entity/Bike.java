@@ -2,13 +2,14 @@ package BikeSharing.Erd.entity;
 
 
 import javax.persistence.*;
+import java.io.Serializable;
 
 /**
  * Велосипед
  */
 @Entity
 @Table(name = "bike")
-public class Bike {
+public class Bike{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")

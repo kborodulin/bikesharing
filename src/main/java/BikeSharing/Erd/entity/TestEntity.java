@@ -4,7 +4,6 @@ import lombok.Data;
 
 import javax.persistence.*;
 import java.time.LocalDateTime;
-import java.util.Date;
 
 @Entity
 @Table(name = "testentity")
@@ -16,4 +15,8 @@ public class TestEntity {
     private long id;
 
     private LocalDateTime startapp;
+
+    public void setStartapp(LocalDateTime withNano) {
+        this.startapp = startapp;
+    }//todo ломбок с компиляционными ошибками
 }
