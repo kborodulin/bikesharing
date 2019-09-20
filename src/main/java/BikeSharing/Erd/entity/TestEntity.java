@@ -15,8 +15,4 @@ public class TestEntity {
     private long id;
 
     private LocalDateTime startapp;
-
-    public void setStartapp(LocalDateTime withNano) {
-        this.startapp = startapp;
-    }//todo ломбок с компиляционными ошибками
 }

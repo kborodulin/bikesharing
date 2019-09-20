@@ -5,11 +5,11 @@ import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatche
 public class MainWebApp extends AbstractAnnotationConfigDispatcherServletInitializer {
     @Override
     protected Class<?>[] getRootConfigClasses() {
-        return new Class[] { ConfigWebApp.class };
+        return new Class<?>[] { ConfigHibernate.class, ConfigDatabase.class };
     }
     @Override
     protected Class<?>[] getServletConfigClasses() {
-        return null;
+        return new Class<?>[] { ConfigWebApp.class };
     }
     @Override
     protected String[] getServletMappings() {
